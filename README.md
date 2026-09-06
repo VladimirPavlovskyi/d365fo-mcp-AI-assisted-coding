@@ -79,7 +79,7 @@ Structural violations (wrong order, missing container, disallowed control) **blo
 **Installing on your own D365FO VM** — the usual case. One line in PowerShell installs Node.js if it is missing, installs the server from npm, and runs the setup wizard, which asks where the index should live and builds the C# bridge for you:
 
 ```powershell
-irm https://raw.githubusercontent.com/dynamics365ninja/d365fo-mcp-server/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/VladimirPavlovskyi/d365fo-mcp-AI-assisted-coding/main/install.ps1 | iex
 ```
 
 Already have Node.js 24+? Then the one-liner has nothing to bootstrap and you can skip it:
