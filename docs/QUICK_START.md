@@ -90,7 +90,7 @@ claude mcp add-json --scope user d365fo-mcp-tools '{"type":"http","url":"https:/
 ## 2. Install
 
 ```powershell
-irm https://raw.githubusercontent.com/dynamics365ninja/d365fo-mcp-server/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/VladimirPavlovskyi/d365fo-mcp-AI-assisted-coding/main/install.ps1 | iex
 ```
 
 The installer checks for Node.js (installing it if missing), installs the server with `npm install -g d365fo-mcp`, and hands off to the setup wizard — which selects your scenario, asks where the configuration and the index should live, builds the C# bridge, asks only the settings that scenario needs, builds the index if you want one, and prints the `.mcp.json` block for step 3.
