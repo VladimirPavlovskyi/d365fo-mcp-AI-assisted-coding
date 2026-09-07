@@ -90,7 +90,7 @@ claude mcp add-json --scope user d365fo-mcp-tools '{"type":"http","url":"https:/
 ## 2. Install
 
 ```powershell
-irm https://raw.githubusercontent.com/dynamics365ninja/d365fo-mcp-server/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/VladimirPavlovskyi/d365fo-mcp-server/main/install.ps1 | iex
 ```
 
 The installer checks for Node.js (installing it if missing), installs the server with `npm install -g d365fo-mcp`, and hands off to the setup wizard — which selects your scenario, asks where the configuration and the index should live, builds the C# bridge, asks only the settings that scenario needs, builds the index if you want one, and prints the `.mcp.json` block for step 3.
@@ -111,7 +111,7 @@ Answers are saved to `config/d365fo-mcp.json` (secrets to `config/secrets.json`)
 <summary>Prefer to run the steps yourself</summary>
 
 ```powershell
-git clone https://github.com/dynamics365ninja/d365fo-mcp-server.git K:\d365fo-mcp-server
+git clone https://github.com/VladimirPavlovskyi/d365fo-mcp-server.git K:\d365fo-mcp-server
 cd K:\d365fo-mcp-server
 npm install
 cd bridge\D365MetadataBridge; dotnet build -c Release; cd ..\..   # required for writes
@@ -217,7 +217,7 @@ VS 2022 searches upward from the solution folder for `.github\copilot-instructio
 Copy-Item "K:\d365fo-mcp-server\.github\copilot-instructions.md" "C:\source\repos\CLAUDE.md"
 ```
 
-Path A users: take the file from [the repository](https://github.com/dynamics365ninja/d365fo-mcp-server/blob/main/.github/copilot-instructions.md) — it is the one thing you do need locally.
+Path A users: take the file from [the repository](https://github.com/VladimirPavlovskyi/d365fo-mcp-server/blob/main/.github/copilot-instructions.md) — it is the one thing you do need locally.
 
 
 # Verify
